@@ -19,7 +19,7 @@ module Pod
         end
 
         def run
-          UI.puts "Add your implementation for the cocoapods-schoutedenapus plugin in #{__FILE__}"
+          File.write('Package.swift', ::Schoutedenapus::Converter.new(@spec).to_s)
         end
 
         private

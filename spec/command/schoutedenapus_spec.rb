@@ -13,6 +13,14 @@ module Pod
 
         cmd.instance_variable_get('@spec').name.should == 'Stencil'
       end
+
+      it 'generates a Package.swift file' do
+        cmd = Command.parse(%w( lib schoutedenapus spec/fixtures/Stencil.podspec.json ))
+        cmd.run
+
+        FileUtils.compare_file('spec/fixtures/Package.swift', 'Package.swift').should == true
+        FileUtils.rm_f('Package.swift')
+      end
     end
   end
 end
