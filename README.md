@@ -2,6 +2,8 @@
 
 Generate Swift packages from podspecs.
 
+Looking for the reverse conversion? => [Chocolat][1]
+
 ## Usage
 
 Running
@@ -19,3 +21,5 @@ into a directory structure that works with SPM.
 Schoutedenapus is a CocoaPods plugin distributed as RubyGem:
 
     $ gem install cocoapods-schoutedenapus
+
+[1]: https://github.com/neonichu/Chocolat
