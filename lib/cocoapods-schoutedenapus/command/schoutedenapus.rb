@@ -1,3 +1,5 @@
+require 'cocoapods-schoutedenapus/converter'
+
 module Pod
   class Command
     class Lib
