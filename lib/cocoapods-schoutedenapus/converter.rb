@@ -17,7 +17,7 @@ EOF
     private
 
     def dependency_to_package(dep)
-      set = Pod::SourcesManager.search(dep)
+      set = Pod::Config.instance.sources_manager.search(dep)
       Pod::Command::help! "Could not find pod '#{dep.name}'" if set.nil?
       url = set.specification.source[:git]
       # FIXME: Should use the lowest matching version
