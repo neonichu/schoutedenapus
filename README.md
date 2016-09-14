@@ -1,5 +1,7 @@
 # Schoutedenapus
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 Generate Swift packages from podspecs.
 
 Looking for the reverse conversion? => [Chocolat][1]
